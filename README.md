@@ -16,7 +16,7 @@
                 Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
                 Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
                 
-                #Whitelisting allowed external URLS and on page style and scripts.
+                #Whitelisting allowed external URLS (iframes, resource etc) and on page style and scripts.
                 Header always set Content-Security-Policy "\
 default-src 'self' https://dev.filpbookilc.com;\
 frame-src dev.flipbookilc.com;\
