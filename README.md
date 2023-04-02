@@ -31,7 +31,7 @@ style-src 'self' 'unsafe-inline';"
         </Directory>
 </VirtualHost>
 ```
-### SESSION COOKIES
+### SESSION COOKIES (SECURE)
 ```
 a. Set an SSL (https://) certificate
 For example:
@@ -43,4 +43,13 @@ For example:
 
 b. Set the following on php.ini
    session.cookie_secure = 1
+```
+### SESSION COOKIES (HTTPONLY)
+```
+HttpOnly Cookies can only be accessed in Server Side no Client or Scripting can access this cookie
+```
+```
+a. setcookie('Foo','Bar',0,'/', 'www.sample.com'  , False, True); //Set True HttpOnly
+b. Set on php.ini
+session.cookie_httponly = 1
 ```
