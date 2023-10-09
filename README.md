@@ -32,15 +32,18 @@ style-src 'self' 'unsafe-inline';"
 </VirtualHost>
 ```
 ### SESSION COOKIES (SECURE)
-```apache
+```
 a. Set an SSL (https://) certificate
 For example:
+```
+```apache
 <VirtualHost *:443>
         SSLEngine on
         SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
         SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
 </VirtualHost>
-
+```
+```
 b. Set the following on php.ini
    session.cookie_secure = 1
 ```
