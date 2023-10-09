@@ -2,7 +2,7 @@
 
 ### SECURITY HEADERS
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-```vim
+```apache
 #APACHE
 <VirtualHost *:443>
         <Directory /var/www/html/flipbook/>
