@@ -32,7 +32,7 @@ style-src 'self' 'unsafe-inline';"
 </VirtualHost>
 ```
 ### SESSION COOKIES (SECURE)
-```vim
+```apache
 a. Set an SSL (https://) certificate
 For example:
 <VirtualHost *:443>
