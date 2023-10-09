@@ -2,7 +2,7 @@
 
 ### SECURITY HEADERS
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-```
+```vim
 #APACHE
 <VirtualHost *:443>
         <Directory /var/www/html/flipbook/>
@@ -32,7 +32,7 @@ style-src 'self' 'unsafe-inline';"
 </VirtualHost>
 ```
 ### SESSION COOKIES (SECURE)
-```
+```vim
 a. Set an SSL (https://) certificate
 For example:
 <VirtualHost *:443>
