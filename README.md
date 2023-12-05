@@ -5,7 +5,7 @@
 ```apache
 #APACHE
 <VirtualHost *:443>
-        <Directory /var/www/html/flipbook/>
+        <Directory /var/www/html/app-folder/>
                 #Remove on page cache
                 FileETag None
                 Header unset ETag
@@ -18,11 +18,11 @@
                 
                 #Whitelisting allowed external URLS (iframes, resource etc) and on page style and scripts.
                 Header always set Content-Security-Policy "\
-default-src 'self' https://dev.filpbookilc.com;\
-frame-src dev.flipbookilc.com;\
+default-src 'self' https://dev.iwebitechnology.com;\
+frame-src dev.iwebitechnology.com;\
 font-src 'self';\
 img-src 'self' data:;\
-connect-src www.google-analytics.com www.googletagmanager.com dev.flipbookilc.com;\
+connect-src www.google-analytics.com www.googletagmanager.com dev.iwebitechnology.com;\
 script-src 'self' 'unsafe-inline' www.googletagmanager.com www.google-analytics.com;\
 style-src 'self' 'unsafe-inline';"
 
@@ -52,7 +52,7 @@ b. Set the following on php.ini
 HttpOnly Cookies can only be accessed in Server Side no Client or Scripting can access this cookie
 ```
 ```
-a. setcookie('Foo','Bar',0,'/', 'www.sample.com'  , False, True); //Set True HttpOnly
+a. setcookie('Foo','Bar',0,'/', 'www.iwebitechnology.com'  , False, True); //Set True HttpOnly
 b. Set on php.ini
 session.cookie_httponly = 1
 ```
